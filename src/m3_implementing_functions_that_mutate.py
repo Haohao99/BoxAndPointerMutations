@@ -3,7 +3,7 @@ This module lets you practice IMPLEMENTING
 functions that MUTATE their arguments.
 
 Authors: David Mutchler, Valerie Galluzzi, Mark Hays, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
+         their colleagues and Hao Hu.
 """  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import rosegraphics as rg
@@ -146,7 +146,9 @@ def swap_colors(circle, rectangle):
     ####################################################################
     # ------------------------------------------------------------------
 
-
+    color = circle.fill_color
+    circle.fill_color = rectangle.fill_color
+    rectangle.fill_color = color
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
 # ----------------------------------------------------------------------
